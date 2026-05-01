@@ -745,6 +745,11 @@ section,
   }
 }
 
+.fill {
+  width: 100%;
+  object-fit: fill;
+}
+
 /*--------------------------------------------------------------
 # image Section
 --------------------------------------------------------------*/
@@ -775,8 +780,20 @@ section,
   padding: 40px 0;
 }
 
-.domain-background {
+.domain-image-background {
   background-color: #bea1d1;
+  background-image: url("../img/domain-image-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120% 105%;
+}
+
+.domain-background {
+  background-color: #f9e7e6;
+}
+
+.domain-font {
+  font-family:'Times New Roman', Times, serif;
 }
 
 @media (max-width: 1200px) {
@@ -1586,4 +1603,11 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.highlighted-text {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
